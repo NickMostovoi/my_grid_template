@@ -15,7 +15,7 @@
 
     & .btn--primary {
         width: 100%;
-        color: #ffffff;
+        color: $color-light;
         border-color: rgba(255, 255, 255, 0);
         border-bottom-color: rgba(255, 255, 255, 0.2);
         background-color: rgba(255, 255, 255, 0.1);
@@ -23,8 +23,8 @@
         &:hover, 
         &:focus {
         cursor: pointer;
-        border-color: #ffffff;
-        background-color: #d66926;
+        border-color: $color-light;
+        background-color: $color-accent;
         }
 
     }
@@ -37,7 +37,7 @@
         padding-left: 30px;
         transition: background-color 0.5s, border-color 0.5s;
         letter-spacing: 0.15em;
-        color: #ffffff;
+        color: $color-light;
         border: 2px solid rgba(255, 255, 255, 0);
         border-bottom-color: rgba(255, 255, 255, 0.251);
         background-color: rgba(255, 255, 255, 0.051);
@@ -48,8 +48,9 @@
         &:hover,
         &:focus {
             border-color: rgba(255, 255, 255, 0.15);
-            border-bottom-color: #ffffff;
+            border-bottom-color: $color-light;
             background-color: rgba(255, 255, 255, 0.15);
+        
         }
     }
 }
