@@ -8,6 +8,7 @@
 
     @extend %container;
     gap: 20px;
+    
     @include md-min {
       grid-template-columns: repeat(3, 1fr);
     }

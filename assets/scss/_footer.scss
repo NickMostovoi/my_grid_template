@@ -5,6 +5,8 @@
 
   background-color: $color-primary;
 
+  letter-spacing: 0;
+
   &__container {
     @extend %container;
   }
@@ -30,6 +32,10 @@
       &:focus {
         color: $color-accent;
       }
+    }
+
+    & .fab {
+        font-size: 36px;
     }
 
     &::after {
@@ -62,36 +68,3 @@
     font-weight: 700;
   }
 }
-
-
-
-.footer__social .fab {
-  font-size: 36px;
-}
-.fab,
-.far {
-  font-weight: 400;
-}
-.fab {
-  font-family: "Font Awesome 5 Brands";
-}
-
-.fa,
-.fab,
-.fad,
-.fal,
-.far,
-.fas {
-  display: inline-block;
-
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-
-  text-rendering: auto;
-}
-
-
-
-
-
