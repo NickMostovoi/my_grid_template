@@ -811,6 +811,26 @@ a {
   color: #637588;
 }
 
+.form ::-webkit-input-placeholder :active {
+  color: red;
+}
+
+.form ::-moz-placeholder :active {
+  color: red;
+}
+
+.form :-ms-input-placeholder :active {
+  color: red;
+}
+
+.form ::-ms-input-placeholder :active {
+  color: red;
+}
+
+.form ::placeholder :active {
+  color: red;
+}
+
 .form__container {
   display: grid;
   gap: 20px;
@@ -1031,6 +1051,9 @@ input:focus {
     margin-bottom: 30px;
     padding: 10px;
   }
+  .skills__actions .btn--primary {
+    min-width: 350px;
+  }
   .posts__actions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1038,6 +1061,9 @@ input:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .posts__actions .btn--primary {
+    min-width: 350px;
   }
 }
 
@@ -1118,6 +1144,10 @@ input:focus {
   h1 {
     font-size: 2.5rem;
   }
+  h2 {
+    margin-bottom: 42px;
+    font-size: 2rem;
+  }
   .btn--light {
     min-width: 200px;
     height: 50px;
@@ -1128,6 +1158,14 @@ input:focus {
   .skills__container {
     gap: 10px;
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+  }
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about__container {
+    gap: 40px;
+    grid-template-columns: 1fr 271px;
   }
 }
 
@@ -1167,12 +1205,33 @@ input:focus {
   .skill-item__title {
     font-size: 1.125rem;
   }
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 767.8px) and (min-width: 576px) {
+  h2 {
+    margin-bottom: 36px;
+    font-size: 1.5rem;
+  }
   .skills__container {
     gap: 10px;
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+  }
+  .about__container {
+    gap: 20px;
+    grid-template-columns: 1fr 236px;
+  }
+  .about__content p:first-of-type::after {
+    right: -10px;
+  }
+  .form__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-item:nth-of-type(1) {
+    grid-column: 1 / span 2;
   }
 }
 
@@ -1183,6 +1242,11 @@ input:focus {
 }
 
 @media (max-width: 575.8px) {
+  h2 {
+    margin-bottom: 36px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
   .btn--primary {
     width: 100%;
     min-width: auto;
@@ -1202,5 +1266,12 @@ input:focus {
   .skills__container {
     gap: 20px;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+  }
+  .about__container {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .about__content p:first-of-type::after {
+    display: none;
   }
 }

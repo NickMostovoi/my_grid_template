@@ -6,6 +6,9 @@
   ::placeholder {
     color: $color-gray;
   }
+  ::placeholder :active {
+    color: red;
+  }
 
   &__container {
     display: grid;
@@ -15,6 +18,10 @@
 
     @include md-min {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include md-sm {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -64,4 +71,10 @@
 
 input:focus {
   outline: none;
+}
+
+@include md-sm {
+  .form-item:nth-of-type(1) {
+  grid-column: 1 / span 2;
+  }
 }

@@ -29,9 +29,14 @@
       display: flex;
       justify-content: center;
     }
+
+    @include sm-min {
+      .btn--primary {
+      min-width: 350px;
+      }
+    }
   }
 }
-
 
 .post-item {
   transition: background-color 0.5s;
