@@ -1,76 +1,96 @@
 .footer {
-    padding: 50px 20px 70px;
-    text-align: center;
-    background-color: $color-primary;
+  padding: 50px 20px 70px;
 
-    &__container {
-        @extend %container;
+  text-align: center;
+
+  background-color: $color-primary;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__social {
+    position: relative;
+
+    display: grid;
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+
+    a {
+      display: block;
+
+      padding: 10px;
+
+      transition: color 0.5s;
+
+      &:hover,
+      &:focus {
+        color: $color-accent;
+      }
     }
 
-    &__social {
-        position: relative;
-        display: grid;
-        justify-content: center;
-        margin-bottom: 40px;
-        grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+    &::after {
+      position: absolute;
+      bottom: -20px;
+      left: calc(50% - 75px / 2);
 
-        a {
-            display: block;
-            padding: 10px;
-            transition: color 0.5s;
+      width: 75px;
+      height: 2px;
 
-            &:hover, 
-            &:focus {
-             color: $color-accent;
-            }
-        }
+      content: "";
 
-        &::after {
-            position: absolute;
-            bottom: -20px;
-            left: calc(50% - 75px / 2);
-            width: 75px;
-            height: 2px;
-            content: "";
-            background-color: rgba(255, 255, 255, 0.1);
-        }
+      background-color: rgba(255, 255, 255, 0.1);
     }
+  }
 
-    &__copy span:nth-of-type(1) {
-        margin-right: -0.5em;
-        letter-spacing: 0.33em;
-        font-weight: 100;
-    }
+  &__copy span:nth-of-type(1) {
+    margin-right: -0.5em;
 
-    &__copy span:nth-of-type(2) {
-            letter-spacing: 0.05em;
-            color: $color-gray-light;
-            font-weight: 700;
-    }
-    
+    letter-spacing: 0.33em;
+
+    font-weight: 100;
+  }
+
+  &__copy span:nth-of-type(2) {
+    letter-spacing: 0.05em;
+
+    color: $color-gray-light;
+
+    font-weight: 700;
+  }
 }
 
 
 
 .footer__social .fab {
-    font-size: 36px;
+  font-size: 36px;
 }
-.fab, .far {
-    font-weight: 400;
+.fab,
+.far {
+  font-weight: 400;
 }
 .fab {
-    font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 5 Brands";
 }
 
-.fa, .fab, .fad, .fal, .far, .fas {
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  display: inline-block;
 
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+
+  text-rendering: auto;
 }
- 
+
 
 
 

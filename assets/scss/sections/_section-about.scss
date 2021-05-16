@@ -12,7 +12,6 @@
     display: grid;
 
     @extend %container;
-    
     @include lg-min {
       gap: 100px;
       grid-template-columns: 1fr 271px;
