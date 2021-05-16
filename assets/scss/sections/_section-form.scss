@@ -3,12 +3,16 @@
 
   background-color: $color-primary;
 
+  ::placeholder {
+    color: $color-gray;
+  }
+
   &__container {
     display: grid;
 
     @extend %container;
     gap: 20px;
-    
+
     @include md-min {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -49,8 +53,6 @@
 
     font-size: 1.125rem;
 
-
-
     &:hover,
     &:focus {
       border-color: rgba(255, 255, 255, 0.15);
@@ -63,11 +65,3 @@
 input:focus {
   outline: none;
 }
-
-
-
-
-
-
-
-

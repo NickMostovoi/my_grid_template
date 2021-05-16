@@ -791,6 +791,26 @@ a {
   background-color: #2d3651;
 }
 
+.form ::-webkit-input-placeholder {
+  color: #637588;
+}
+
+.form ::-moz-placeholder {
+  color: #637588;
+}
+
+.form :-ms-input-placeholder {
+  color: #637588;
+}
+
+.form ::-ms-input-placeholder {
+  color: #637588;
+}
+
+.form ::placeholder {
+  color: #637588;
+}
+
 .form__container {
   display: grid;
   gap: 20px;
@@ -1007,9 +1027,6 @@ input:focus {
 }
 
 @media (min-width: 576px) {
-  .btn--primary {
-    min-width: 350px;
-  }
   .skills {
     margin-bottom: 30px;
     padding: 10px;
