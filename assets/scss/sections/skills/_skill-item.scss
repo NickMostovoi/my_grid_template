@@ -23,16 +23,15 @@
     transition: opacity 0.5s;
 
     opacity: 0.8;
-    background-color: #2d3651;
+    background-color: $color-primary;
 
     @include abs-position;
   }
 
-
   &__image {
     transition: transform 0.5s;
 
-    background-color: #2d3651;
+    background-color: $color-primary;
     background-position: center;
     background-size: cover;
 
