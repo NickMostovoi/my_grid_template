@@ -2,10 +2,9 @@
   padding: 50px 20px 70px;
 
   text-align: center;
+  letter-spacing: 0;
 
   background-color: $color-primary;
-
-  letter-spacing: 0;
 
   &__container {
     @extend %container;
@@ -35,7 +34,7 @@
     }
 
     & .fab {
-        font-size: 36px;
+      font-size: 36px;
     }
 
     &::after {

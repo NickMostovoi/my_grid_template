@@ -15,11 +15,9 @@
 
     @extend %container;
     gap: 20px;
-
     @include md-min {
       grid-template-columns: repeat(3, 1fr);
     }
-
     @include md-sm {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -75,6 +73,6 @@ input:focus {
 
 @include md-sm {
   .form-item:nth-of-type(1) {
-  grid-column: 1 / span 2;
+    grid-column: 1 / span 2;
   }
 }
