@@ -811,26 +811,6 @@ a {
   color: #637588;
 }
 
-.form ::-webkit-input-placeholder :active {
-  color: red;
-}
-
-.form ::-moz-placeholder :active {
-  color: red;
-}
-
-.form :-ms-input-placeholder :active {
-  color: red;
-}
-
-.form ::-ms-input-placeholder :active {
-  color: red;
-}
-
-.form ::placeholder :active {
-  color: red;
-}
-
 .form__container {
   display: grid;
   gap: 20px;
@@ -993,8 +973,8 @@ input:focus {
 .footer {
   padding: 50px 20px 70px;
   text-align: center;
-  background-color: #2d3651;
   letter-spacing: 0;
+  background-color: #2d3651;
 }
 
 .footer__social {
@@ -1187,9 +1167,12 @@ input:focus {
   .btn--light {
     min-width: 170px;
     height: 40px;
+    letter-spacing: 0.05em;
   }
   .header-menu {
     background-color: rgba(68, 89, 110, 0.25);
+    -webkit-box-shadow: -3px 3px 20px -10px #000000;
+            box-shadow: -3px 3px 20px -10px #000000;
   }
   .header-navbar {
     display: -webkit-box;
@@ -1249,8 +1232,8 @@ input:focus {
     grid-column: 1 / span 2;
   }
   .posts__grid {
-    grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
     grid-auto-columns: 1fr 1fr;
+    grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
   }
 }
 

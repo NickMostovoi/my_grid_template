@@ -127,6 +127,8 @@ a {
     @include md {
       min-width: 170px;
       height: 40px;
+
+      letter-spacing: 0.05em;
     }
   }
 

@@ -6,9 +6,6 @@
   ::placeholder {
     color: $color-gray;
   }
-  ::placeholder :active {
-    color: red;
-  }
 
   &__container {
     display: grid;
